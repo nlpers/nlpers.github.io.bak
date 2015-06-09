@@ -11,25 +11,22 @@
     
 
     
-    <meta name="description" content="Ubuntu Eclipse for C++ 11
-最近搞了个项目需要在Ubuntu下用C++来做，好吧，对我来说真是巨坑爹呀！本来C++就不怎么会，还要在linux下搞，这真是无语了，：（好了，反正不管怎么样就要开搞，首先面对的问题就是Eclipse C++默认不支持C++ 11，唉，这让我怎么说好呢……
+    <meta name="description" content="最近搞了个项目需要在Ubuntu下用C++来做，好吧，对我来说真是巨坑爹呀！本来C++就不怎么会，还要在linux下搞，这真是无语了，：（好了，反正不管怎么样就要开搞，首先面对的问题就是Eclipse C++默认不支持C++ 11，唉，这让我怎么说好呢……
 不过皇天不负有心人，终于让我弄好了怎么搞，做个记录备忘一下，同时给有需要的人做个参考。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Ubuntu Eclipse for C++ 11">
 <meta property="og:url" content="http://yoursite.com/2015/06/09/Ubuntu-Eclipse-for-C-11/index.html">
 <meta property="og:site_name" content="NLPERS' PUB">
-<meta property="og:description" content="Ubuntu Eclipse for C++ 11
-最近搞了个项目需要在Ubuntu下用C++来做，好吧，对我来说真是巨坑爹呀！本来C++就不怎么会，还要在linux下搞，这真是无语了，：（好了，反正不管怎么样就要开搞，首先面对的问题就是Eclipse C++默认不支持C++ 11，唉，这让我怎么说好呢……
+<meta property="og:description" content="最近搞了个项目需要在Ubuntu下用C++来做，好吧，对我来说真是巨坑爹呀！本来C++就不怎么会，还要在linux下搞，这真是无语了，：（好了，反正不管怎么样就要开搞，首先面对的问题就是Eclipse C++默认不支持C++ 11，唉，这让我怎么说好呢……
 不过皇天不负有心人，终于让我弄好了怎么搞，做个记录备忘一下，同时给有需要的人做个参考。">
 <meta property="og:image" content="http://i.imgur.com/53QB9N5.png">
 <meta property="og:image" content="http://i.imgur.com/8yUTWNh.png">
 <meta property="og:image" content="http://i.imgur.com/cpL8Vrb.png">
 <meta property="og:image" content="http://i.imgur.com/ZoBSRaD.png">
-<meta property="og:updated_time" content="2015-06-09T09:38:44.832Z">
+<meta property="og:updated_time" content="2015-06-09T09:44:15.829Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ubuntu Eclipse for C++ 11">
-<meta name="twitter:description" content="Ubuntu Eclipse for C++ 11
-最近搞了个项目需要在Ubuntu下用C++来做，好吧，对我来说真是巨坑爹呀！本来C++就不怎么会，还要在linux下搞，这真是无语了，：（好了，反正不管怎么样就要开搞，首先面对的问题就是Eclipse C++默认不支持C++ 11，唉，这让我怎么说好呢……
+<meta name="twitter:description" content="最近搞了个项目需要在Ubuntu下用C++来做，好吧，对我来说真是巨坑爹呀！本来C++就不怎么会，还要在linux下搞，这真是无语了，：（好了，反正不管怎么样就要开搞，首先面对的问题就是Eclipse C++默认不支持C++ 11，唉，这让我怎么说好呢……
 不过皇天不负有心人，终于让我弄好了怎么搞，做个记录备忘一下，同时给有需要的人做个参考。">
 
     
@@ -108,20 +105,20 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#ubuntu-eclipse-for-c-11"><span class="toc-number">1.</span> <span class="toc-text">Ubuntu Eclipse for C++ 11</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#编译支持c-11"><span class="toc-number">1.1.</span> <span class="toc-text">编译支持C++ 11</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#编辑器支持c-11"><span class="toc-number">1.2.</span> <span class="toc-text">编辑器支持C++ 11</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#添加编译标记-fopenmp"><span class="toc-number">1.3.</span> <span class="toc-text">添加编译标记-fopenmp</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#添加其他库如mathpthread"><span class="toc-number">1.4.</span> <span class="toc-text">添加其他库如math/pthread</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#添加自定义函数库"><span class="toc-number">1.5.</span> <span class="toc-text">添加自定义函数库</span></a></li></ol></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#编译支持c-111"><span class="toc-number">1.</span> <span class="toc-text">编译支持C++ 111</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#编辑器支持c-112"><span class="toc-number">2.</span> <span class="toc-text">编辑器支持C++ 112</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#添加编译标记-fopenmp"><span class="toc-number">3.</span> <span class="toc-text">添加编译标记-fopenmp</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#添加其他库如mathpthread"><span class="toc-number">4.</span> <span class="toc-text">添加其他库如math/pthread</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#添加自定义函数库"><span class="toc-number">5.</span> <span class="toc-text">添加自定义函数库</span></a></li></ol>
 		
 		</div>
 		
-		<h1 id="ubuntu-eclipse-for-c-11">Ubuntu Eclipse for C++ 11</h1>
-<p>最近搞了个项目需要在Ubuntu下用C++来做，好吧，对我来说真是巨坑爹呀！本来C++就不怎么会，还要在linux下搞，这真是无语了，：（好了，反正不管怎么样就要开搞，首先面对的问题就是Eclipse C++默认不支持C++ 11，唉，这让我怎么说好呢……</p>
+		<p>最近搞了个项目需要在Ubuntu下用C++来做，好吧，对我来说真是巨坑爹呀！本来C++就不怎么会，还要在linux下搞，这真是无语了，：（好了，反正不管怎么样就要开搞，首先面对的问题就是Eclipse C++默认不支持C++ 11，唉，这让我怎么说好呢……</p>
 <p>不过皇天不负有心人，终于让我弄好了怎么搞，做个记录备忘一下，同时给有需要的人做个参考。</p>
-<h2 id="编译支持c-11">编译支持C++ 11</h2>
+<a id="more"></a>
+<h1 id="编译支持c-111">编译支持C++ 11<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></h1>
 <p>我能说坑爹真的是从头开始啊，上来编译就不支持C++，编译时会报“This file requires compiler and library support for the ISO C++ 2011 standard.”错误。</p>
 <p><strong>解决：</strong>IDE: Project -&gt; Properties -&gt; C/C++ Build -&gt; Settings -&gt; Tool Settings -&gt;Cross G++ Complier -&gt; Miscellaneous -&gt; Other flags:</p>
 <p>添加 “-std=c++11”; GCC在make时, 添加C++11的特性. <img src="http://i.imgur.com/53QB9N5.png"></p>
 <p>添加之后就可以编译正常通过了，最好在下面的Cross G++ Compiler和Cross G++ Linker的对应位置也添加该flag。</p>
 <p>备注：因为我选用的的Cross Gcc编译器，如果选用的是Linux Gcc与之类似。</p>
-<h2 id="编辑器支持c-11">编辑器支持C++ 11</h2>
+<h1 id="编辑器支持c-112">编辑器支持C++ 11<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a></h1>
 <p>虽然上面的做法可以让代码编译通过，但是在eclipse中写代码时会报一堆错误（前提是使用了C++ 11对应的新特性）。这让我很是蛋疼，各种搜索之后发现还需要修改Preprocessor的属性。</p>
 <p><strong>解决：</strong>IDE: Project -&gt; Properties -&gt; C/C++ General -&gt; Preprocessor Include Paths， Macros etc. -&gt; Providers</p>
 <p>选中其中的CDT Cross GCC Built-in Compiler Setting，勾掉“Use global provider shared between projects”选项，然后在“Command to get compiler specs：”中添加“-std=c++11”。</p>
@@ -131,20 +128,27 @@
 
 </div>
 <p>好了，这样Eclipse CDT就可以完美支持C++ 11了。下面记录一下我遇到的其他问题：</p>
-<h2 id="添加编译标记-fopenmp">添加编译标记-fopenmp</h2>
+<h1 id="添加编译标记-fopenmp">添加编译标记-fopenmp</h1>
 <p>与添加问题1类似，在IDE: Project -&gt; Properties -&gt; C/C++ Build -&gt; Settings -&gt; Tool Settings -&gt;Cross G++ Complier -&gt; Miscellaneous -&gt; Other flags:里面添加标记即可。</p>
 <div class="figure">
 <img src="http://i.imgur.com/cpL8Vrb.png">
 
 </div>
-<h2 id="添加其他库如mathpthread">添加其他库如math/pthread</h2>
+<h1 id="添加其他库如mathpthread">添加其他库如math/pthread</h1>
 <p>在IDE: Project -&gt; Properties -&gt; C/C++ General -&gt; Paths and Symbols -&gt; Libraries中添加。</p>
 <div class="figure">
 <img src="http://i.imgur.com/ZoBSRaD.png">
 
 </div>
-<h2 id="添加自定义函数库">添加自定义函数库</h2>
+<h1 id="添加自定义函数库">添加自定义函数库</h1>
 <p>当系统已有函数库无法支持的时候就需要添加自定义函数库了，例如科学计算的函数库Blas，与上面的类似，但需要添加在Libraries右边的Library Paths中添加库安装的位置。</p>
+<div class="footnotes">
+<hr>
+<ol>
+<li id="fn1"><p><a href="http://www.xuebuyuan.com/2014512.html" target="_blank" rel="external">“Eclipse CDT” (Eclipse C++) 安装 与 配置 (支持C++11)</a><a href="#fnref1">↩</a></p></li>
+<li id="fn2"><p><a href="http://stackoverflow.com/questions/17457069/enabling-c11-in-eclipse-juno-kepler-luna-cdt" target="_blank" rel="external">Enabling C++11 in Eclipse Juno/Kepler/Luna CDT</a><a href="#fnref2">↩</a></p></li>
+</ol>
+</div>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -189,7 +193,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#ubuntu-eclipse-for-c-11"><span class="toc-number">1.</span> <span class="toc-text">Ubuntu Eclipse for C++ 11</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#编译支持c-11"><span class="toc-number">1.1.</span> <span class="toc-text">编译支持C++ 11</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#编辑器支持c-11"><span class="toc-number">1.2.</span> <span class="toc-text">编辑器支持C++ 11</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#添加编译标记-fopenmp"><span class="toc-number">1.3.</span> <span class="toc-text">添加编译标记-fopenmp</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#添加其他库如mathpthread"><span class="toc-number">1.4.</span> <span class="toc-text">添加其他库如math/pthread</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#添加自定义函数库"><span class="toc-number">1.5.</span> <span class="toc-text">添加自定义函数库</span></a></li></ol></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#编译支持c-111"><span class="toc-number">1.</span> <span class="toc-text">编译支持C++ 111</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#编辑器支持c-112"><span class="toc-number">2.</span> <span class="toc-text">编辑器支持C++ 112</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#添加编译标记-fopenmp"><span class="toc-number">3.</span> <span class="toc-text">添加编译标记-fopenmp</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#添加其他库如mathpthread"><span class="toc-number">4.</span> <span class="toc-text">添加其他库如math/pthread</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#添加自定义函数库"><span class="toc-number">5.</span> <span class="toc-text">添加自定义函数库</span></a></li></ol>
  
   </div>
 
