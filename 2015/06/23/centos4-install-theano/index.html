@@ -11,26 +11,26 @@
     
 
     
-    <meta name="description" content="0. 安装注意
+    <meta name="description" content="安装注意
 很多时候出现问题是由于环境变量配置的关系：
 
-C_INCLUDE_PATH：C头文件搜索目录 CPLUS_INCLUDE_PATH：C++头文件搜索目录 LD_LIBRARY_PATH：该环境变量用于在程序加载运行期间查找动态链接库时指定除了系统默认路径之外的其他路径（如果运行是提示某些动态接库找不到，可以看看该动态链接库是否添加到该目录） LIBRARY_PATH：该环境变">
+C_INCLUDE_PATH：C头文件搜索目录 CPLUS_INCLUDE_PATH：C++头文件搜索目录 LD_LIBRARY_PATH：该环境变量用于在程序加载运行期间查找动态链接库时指定除了系统默认路径之外的其他路径（如果运行是提示某些动态接库找不到，可以看看该动态链接库是否添加到该目录） LIBRARY_PATH：该环境变量用于">
 <meta property="og:type" content="article">
 <meta property="og:title" content="centos4 install theano">
 <meta property="og:url" content="http://yoursite.com/2015/06/23/centos4-install-theano/index.html">
 <meta property="og:site_name" content="NLPERS' PUB">
-<meta property="og:description" content="0. 安装注意
+<meta property="og:description" content="安装注意
 很多时候出现问题是由于环境变量配置的关系：
 
-C_INCLUDE_PATH：C头文件搜索目录 CPLUS_INCLUDE_PATH：C++头文件搜索目录 LD_LIBRARY_PATH：该环境变量用于在程序加载运行期间查找动态链接库时指定除了系统默认路径之外的其他路径（如果运行是提示某些动态接库找不到，可以看看该动态链接库是否添加到该目录） LIBRARY_PATH：该环境变">
+C_INCLUDE_PATH：C头文件搜索目录 CPLUS_INCLUDE_PATH：C++头文件搜索目录 LD_LIBRARY_PATH：该环境变量用于在程序加载运行期间查找动态链接库时指定除了系统默认路径之外的其他路径（如果运行是提示某些动态接库找不到，可以看看该动态链接库是否添加到该目录） LIBRARY_PATH：该环境变量用于">
 <meta property="og:image" content="http://i.imgur.com/B0yeO7U.png">
-<meta property="og:updated_time" content="2015-06-23T04:31:51.196Z">
+<meta property="og:updated_time" content="2015-06-23T05:46:23.510Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="centos4 install theano">
-<meta name="twitter:description" content="0. 安装注意
+<meta name="twitter:description" content="安装注意
 很多时候出现问题是由于环境变量配置的关系：
 
-C_INCLUDE_PATH：C头文件搜索目录 CPLUS_INCLUDE_PATH：C++头文件搜索目录 LD_LIBRARY_PATH：该环境变量用于在程序加载运行期间查找动态链接库时指定除了系统默认路径之外的其他路径（如果运行是提示某些动态接库找不到，可以看看该动态链接库是否添加到该目录） LIBRARY_PATH：该环境变">
+C_INCLUDE_PATH：C头文件搜索目录 CPLUS_INCLUDE_PATH：C++头文件搜索目录 LD_LIBRARY_PATH：该环境变量用于在程序加载运行期间查找动态链接库时指定除了系统默认路径之外的其他路径（如果运行是提示某些动态接库找不到，可以看看该动态链接库是否添加到该目录） LIBRARY_PATH：该环境变量用于">
 
     
     <link rel="alternative" href="/atom.xml" title="NLPERS&#39; PUB" type="application/atom+xml">
@@ -108,17 +108,17 @@ C_INCLUDE_PATH：C头文件搜索目录 CPLUS_INCLUDE_PATH：C++头文件搜索�
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#安装注意"><span class="toc-number">1.</span> <span class="toc-text">0. 安装注意</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装gcc4.8.2"><span class="toc-number">2.</span> <span class="toc-text">1. 安装GCC4.8.2</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装python2.7.10"><span class="toc-number">3.</span> <span class="toc-text">2. 安装Python2.7.10</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装lapack"><span class="toc-number">4.</span> <span class="toc-text">3. 安装lapack</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装atlas"><span class="toc-number">5.</span> <span class="toc-text">4. 安装atlas</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装nose"><span class="toc-number">6.</span> <span class="toc-text">5. 安装nose</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装numpy"><span class="toc-number">7.</span> <span class="toc-text">6. 安装numpy</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装scipy"><span class="toc-number">8.</span> <span class="toc-text">7. 安装scipy</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装theano"><span class="toc-number">9.</span> <span class="toc-text">8. 安装theano</span></a></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#安装注意"><span class="toc-number">1.</span> <span class="toc-text">安装注意</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装gcc4.8.2"><span class="toc-number">2.</span> <span class="toc-text">安装GCC4.8.2</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装python2.7.10"><span class="toc-number">3.</span> <span class="toc-text">安装Python2.7.10</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装cmake"><span class="toc-number">4.</span> <span class="toc-text">安装cmake</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装lapack"><span class="toc-number">5.</span> <span class="toc-text">安装lapack</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装atlas"><span class="toc-number">6.</span> <span class="toc-text">安装atlas</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装nose"><span class="toc-number">7.</span> <span class="toc-text">安装nose</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装numpy"><span class="toc-number">8.</span> <span class="toc-text">安装numpy</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装scipy"><span class="toc-number">9.</span> <span class="toc-text">安装scipy</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装theano"><span class="toc-number">10.</span> <span class="toc-text">安装theano</span></a></li></ol>
 		
 		</div>
 		
-		<h1 id="安装注意">0. 安装注意</h1>
+		<h1 id="安装注意">安装注意</h1>
 <p>很多时候出现问题是由于环境变量配置的关系：</p>
 <blockquote>
 <p>C_INCLUDE_PATH：C头文件搜索目录 CPLUS_INCLUDE_PATH：C++头文件搜索目录 LD_LIBRARY_PATH：该环境变量用于在程序加载运行期间查找动态链接库时指定除了系统默认路径之外的其他路径（如果运行是提示某些动态接库找不到，可以看看该动态链接库是否添加到该目录） LIBRARY_PATH：该环境变量用于在程序编译期间查找动态链接库时指定查找共享库的路径（如果编译时提示某些动态链接库找不到，可以看看该动态链接库是否添加到该目录）</p>
 </blockquote>
 <p><strong>注意：</strong>在配置这些环境变量的时候要注意，不重要在末尾出现<code>:</code>，这样会导致编译时自引用，可能会出现某些头文件找不到，或者变量无定义。同时注意不要出现<code>::</code>，这样也会导致出现不可预知的情况。</p>
-<h1 id="安装gcc4.8.2">1. 安装GCC4.8.2</h1>
+<h1 id="安装gcc4.8.2">安装GCC4.8.2</h1>
 <ul>
 <li><p><strong>问题：</strong>缺失gmp、mpc和mpfr几个库</p></li>
 <li><strong>解决1：</strong>依次按顺序安装几个库即可，安装之后需要设置CPLUS_INCLUDE_PATH、LIBRARY_PATH和LD_LIBRARY_PATH几个路径。</li>
@@ -128,16 +128,13 @@ C_INCLUDE_PATH：C头文件搜索目录 CPLUS_INCLUDE_PATH：C++头文件搜索�
 <p>备注：使用解决方法1，在编译gcc的时候可能还会需要指定–with-gmp=/path/to/gmp –with-mpfr=/path/to/mpfr –with-mpc=/path/to/mpc</p>
 </blockquote>
 <ul>
-<li><p><strong>问题：</strong>Where has __float128 gone?</p>
-<p>In file included from ./kinds.h:75:0, from /gcc-4.8.0/libgfortran/libgfortran.h:232, from /gcc-4.8.0/libgfortran/fmain.c:4:</p>
-<p>/gcc-4.8.0/libgfortran/kinds-override.h:40:5: error: #error “Where has __float128 gone?&quot;</p>
-<p># error “Where has __float128 gone?&quot; ^<br>make[3]: *** [fmain.lo] Error 1 make[2]: *** [all] Error 2 make[1]: *** [all-target-libgfortran] Error 2 make: *** [all] Error 2</p></li>
+<li><p><strong>问题：</strong>Where has __float128 gone? <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">In file included from ./kinds.h:<span class="number">75</span>:<span class="number">0</span>,</span><br><span class="line">from /gcc-<span class="number">4.8</span>.<span class="number">0</span>/libgfortran/libgfortran.h:<span class="number">232</span>,</span><br><span class="line">from /gcc-<span class="number">4.8</span>.<span class="number">0</span>/libgfortran/fmain.c:<span class="number">4</span>:</span><br><span class="line"></span><br><span class="line">/gcc-<span class="number">4.8</span>.<span class="number">2</span>/libgfortran/kinds-override.h:<span class="number">40</span>:<span class="number">5</span>: error: <span class="comment">#error "Where has __float128 gone?"</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#   error "Where has __float128 gone?"</span></span><br><span class="line">	^  </span><br><span class="line">make[<span class="number">3</span>]: *** [fmain.lo] Error <span class="number">1</span></span><br><span class="line">make[<span class="number">2</span>]: *** [all] Error <span class="number">2</span></span><br><span class="line">make[<span class="number">1</span>]: *** [all-target-libgfortran] Error <span class="number">2</span></span><br><span class="line">make: *** [all] Error <span class="number">2</span></span><br></pre></td></tr></table></figure></p></li>
 <li><p><strong>解决：</strong>该问题排查n久，最后发现是路径设置问题，具体哪个路径设置问题还不清楚，最终将.bashrc中的自定义路径设置清空，重新编译即可。</p></li>
 </ul>
 <blockquote>
 <p>编译完成之后，在.bashrc或者.bash_profile文件中设置路径，我是这样设置的： GCC_HOME=/home/users/liangjun03/local/gcc-4.8.2 PATH=<span class="math">\(GCC_HOME/bin:\)</span>PATH CPLUS_INCLUDE_PATH=<span class="math">\(GCC_HOME/include:\)</span>GCC_HOME/include/c++/4.8.2 LD_LIBRARY_PATH=<span class="math">\(GCC_HOME/lib:\)</span>GCC_HOME/lib64:<span class="math">\(LD_LIBRARY_PATH LIBRARY_PATH=\)</span>GCC_HOME/lib:<span class="math">\(GCC_HOME/lib64:\)</span>LIBRARY_PATH LD_RUN_PATH=<span class="math">\(GCC_HOME/lib:\)</span>GCC_HOME/lib64</p>
 </blockquote>
-<h1 id="安装python2.7.10">2. 安装Python2.7.10</h1>
+<h1 id="安装python2.7.10">安装Python2.7.10</h1>
 <ul>
 <li><strong>问题：</strong>模块编译失败</li>
 </ul>
@@ -146,43 +143,34 @@ C_INCLUDE_PATH：C头文件搜索目录 CPLUS_INCLUDE_PATH：C++头文件搜索�
 
 </div>
 <p>看上面报的问题主要是有几个模块是编译失败，有几个模块是因为编译依赖不存在无法编译。先来解决编译失败的……</p>
-<p>报错如下：</p>
-<pre><code>building &#39;readline&#39; extension
-/opt/compiler/gcc-4.8.2/bin/gcc -pthread -fPIC -fno-strict-aliasing -fPIC -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -I. -IInclude -I./Include -I/usr/local/include -I/home/users/liangjun03/soft/Python-2.7.10/Include -I/home/users/liangjun03/soft/Python-2.7.10 -c /home/users/liangjun03/soft/Python-2.7.10/Modules/readline.c -o build/temp.linux-x86_64-2.7/home/users/liangjun03/soft/Python-2.7.10/Modules/readline.o
-/opt/compiler/gcc-4.8.2/bin/gcc -pthread -shared build/temp.linux-x86_64-2.7/home/users/liangjun03/soft/Python-2.7.10/Modules/readline.o -L/usr/lib/termcap -L/usr/local/lib -lreadline -lncursesw -o build/lib.linux-x86_64-2.7/readline.so
-/home/opt/gcc-4.8.2.bpkg-r2/gcc-4.8.2.bpkg-r2/sbin/../lib/gcc/x86_64-baidu-linux-gnu/4.8.2/../../../../x86_64-baidu-linux-gnu/bin/ld: cannot find -lncursesw
-
-collect2: error: ld returned 1 exit status</code></pre>
+<p>报错如下： <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">building <span class="string">'readline'</span> extension</span><br><span class="line">/opt/compiler/gcc-<span class="number">4.8</span>.<span class="number">2</span>/bin/gcc -pthread <span class="operator">-f</span>PIC -fno-strict-aliasing <span class="operator">-f</span>PIC -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -I. -IInclude -I./Include -I/usr/<span class="built_in">local</span>/include -I/home/users/liangjun03/soft/Python-<span class="number">2.7</span>.<span class="number">10</span>/Include -I/home/users/liangjun03/soft/Python-<span class="number">2.7</span>.<span class="number">10</span> -c /home/users/liangjun03/soft/Python-<span class="number">2.7</span>.<span class="number">10</span>/Modules/readline.c -o build/temp.linux-x86_64-<span class="number">2.7</span>/home/users/liangjun03/soft/Python-<span class="number">2.7</span>.<span class="number">10</span>/Modules/readline.o</span><br><span class="line">/opt/compiler/gcc-<span class="number">4.8</span>.<span class="number">2</span>/bin/gcc -pthread -shared build/temp.linux-x86_64-<span class="number">2.7</span>/home/users/liangjun03/soft/Python-<span class="number">2.7</span>.<span class="number">10</span>/Modules/readline.o -L/usr/lib/termcap -L/usr/<span class="built_in">local</span>/lib -lreadline -lncursesw -o build/lib.linux-x86_64-<span class="number">2.7</span>/readline.so</span><br><span class="line">/home/opt/gcc-<span class="number">4.8</span>.<span class="number">2</span>.bpkg-r2/gcc-<span class="number">4.8</span>.<span class="number">2</span>.bpkg-r2/sbin/../lib/gcc/x86_64-baidu-linux-gnu/<span class="number">4.8</span>.<span class="number">2</span>/../../../../x86_64-baidu-linux-gnu/bin/ld: cannot find -lncursesw</span><br><span class="line"></span><br><span class="line">collect2: error: ld returned <span class="number">1</span> <span class="built_in">exit</span> status</span><br></pre></td></tr></table></figure></p>
 <ul>
 <li><strong>解决：</strong></li>
 </ul>
-<p>从编译信息来看，主要是缺失了链接库ncursesw，那我们就装这个玩意！</p>
-<pre><code>CFLAGS=-fPIC ./configure --prefix=/home/users/liangjun03/local/ncurses-5.7 --enable-widec --with-shared</code></pre>
-<p>安装gdbm</p>
-<pre><code>./configure --prefix=/home/users/liangjun03/local/gdbm-1.8.3
-make
-make install
-make install-compat（这个就是安装那个扩展）</code></pre>
+<p>从编译信息来看，主要是缺失了链接库ncursesw，那我们就装这个玩意！ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">CFLAGS=<span class="operator">-f</span>PIC ./configure --prefix=/home/users/liangjun03/<span class="built_in">local</span>/ncurses-<span class="number">5.7</span> --enable-widec --with-shared</span><br></pre></td></tr></table></figure></p>
+<p>安装gdbm <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">   ./configure --prefix=/home/users/liangjun03/<span class="built_in">local</span>/gdbm-<span class="number">1.8</span>.<span class="number">3</span></span><br><span class="line">make</span><br><span class="line">make install</span><br><span class="line">make install-compat（这个就是安装那个扩展）</span><br></pre></td></tr></table></figure></p>
 <p>安装完ncursesw和gdbm之后，我这里会出现_ssl模块编译失败，该模块是用于网络编程的，由于开发机无法联网，这里就不进行处理了（PS：安装openssl应该就可以解决）</p>
 <p>模块| 依赖| 说明 —|———|——- _bsddb| bsddb| Interface to Berkeley DB library。Berkeley数据库的接口 _curses| ncurses| Terminal handling for character-cell displays。 _curses_panel| ncurses |A panel stack extension for curses。 _sqlite3| sqlite| DB-API 2.0 interface for SQLite databases。SqlLite，CentOS可以安装sqlite-devel _ssl| openssl-devel.i686| TLS/SSL wrapper for socket objects。 _tkinter| N/A| a thin object-oriented layer on top of Tcl/Tk。如果不使用桌面程序可以忽略TKinter bsddb185| N/A| old bsddb module 老的bsddb模块，可忽略。 bz2| bzip2-devel.i686 Compression| compatible with bzip2。bzip2-devel dbm| bsddb| Simple “database” interface。 dl| N/A| Call C functions in shared objects.Python2.6开始，已经弃用。 gdbm| gdbm-devel.i686| GNU’s reinterpretation of dbm imageop| N/A| Manipulate raw image data。已经弃用。 readline| readline-devel| GNU readline interface sunaudiodev| N/A| Access to Sun audio hardware。这个是针对Sun平台的，CentOS下可以忽略 zlib| Zlib| Compression compatible with gzip</p>
-<h1 id="安装lapack">3. 安装lapack</h1>
+<h1 id="安装cmake">安装cmake</h1>
+<p>由于安装lapack时需要用到cmake，因此先安装cmake： <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">./configure --prefix=/path/to/install/cmake</span><br><span class="line">make</span><br><span class="line">make install</span><br></pre></td></tr></table></figure></p>
+<h1 id="安装lapack">安装lapack</h1>
 <p>1.复制源码目录中的make.inc.example:<code>cp make.inc.example make.inc</code> 2.修改make.inc 在<strong>OPTS</strong>、<strong>NOOPT</strong>后加入参数<code>-fPIC</code> 3.修改Makefile文件</p>
 <p>将 <figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="label">lib:</span> lapacklib tmglib	</span><br><span class="line"><span class="preprocessor">#lib:blaslib variants lapacklib tmglib</span></span><br></pre></td></tr></table></figure></p>
 <p>改为： <figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#lib: lapacklib tmglib	</span></span><br><span class="line"><span class="label">lib:</span>blaslib variants lapacklib tmglib</span><br></pre></td></tr></table></figure></p>
 <p>然后编译即可，编译完成后会生成<code>liblapack.a librefblas.a libtmglib.a</code>三个链接库，将其放置在系统可以找到的地方即可（即在LD_LIBRARY_PATH和LIBRARY_PATH目录中）。</p>
-<h1 id="安装atlas">4. 安装atlas</h1>
+<h1 id="安装atlas">安装atlas</h1>
 <p>1.进入目录创建编译目录build 2.进入build目录，执行 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">../configure -b <span class="number">64</span> -Fa alg <span class="operator">-f</span>PIC --prefix=/path/to/install/atlas</span><br><span class="line">make</span><br><span class="line"><span class="built_in">cd</span> lib</span><br><span class="line">make shared</span><br><span class="line"><span class="built_in">cd</span> .. &amp;&amp; make install</span><br></pre></td></tr></table></figure></p>
-<h1 id="安装nose">5. 安装nose</h1>
+<h1 id="安装nose">安装nose</h1>
 <p>进入源码目录，执行<code>python setup.py install</code></p>
-<h1 id="安装numpy">6. 安装numpy</h1>
+<h1 id="安装numpy">安装numpy</h1>
 <p>1.拷贝目录下的site配置文件 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp site.cfg.example site.cfg</span><br></pre></td></tr></table></figure></p>
 <p>2.修改其中的内容</p>
 <p>将 <figure class="highlight vala"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#[DEFAULT]</span></span><br><span class="line"><span class="preprocessor">#library_dirs = /usr/local/lib</span></span><br><span class="line"><span class="preprocessor">#include_dirs = /usr/local/include</span></span><br></pre></td></tr></table></figure></p>
 <p>改为： <figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">[DEFAULT]</span></span><br><span class="line"><span class="setting">library_dirs = <span class="value">/path/to/atlas/lib</span></span></span><br><span class="line"><span class="setting">include_dirs = <span class="value">/path/to/atlas/include</span></span></span><br><span class="line"></span><br><span class="line"><span class="title">[blas_opt]</span></span><br><span class="line"><span class="setting">libraries = <span class="value">ptf77blas, ptcblas, atlas</span></span></span><br><span class="line"></span><br><span class="line"><span class="title">[lapack_opt]</span></span><br><span class="line"><span class="setting">libraries = <span class="value">lapack, ptf77blas, ptcblas, atlas</span></span></span><br></pre></td></tr></table></figure></p>
 <p>3.编译 <figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">python setup<span class="class">.py</span> build</span><br><span class="line">python setup<span class="class">.py</span> install</span><br></pre></td></tr></table></figure></p>
-<h1 id="安装scipy">7. 安装scipy</h1>
+<h1 id="安装scipy">安装scipy</h1>
 <p>同numpy，可直接将numpy下的site.cfg复制过来。</p>
-<h1 id="安装theano">8. 安装theano</h1>
+<h1 id="安装theano">安装theano</h1>
 <p>1.进入目录安装执行 <figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python setup<span class="class">.py</span> install</span><br></pre></td></tr></table></figure></p>
 <p>2.进入$home创建.theanorc文件 写入： <figure class="highlight nix"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"> <span class="comment"># other stuff can go here</span></span><br><span class="line">[blas]</span><br><span class="line"><span class="variable">ldflags =</span> -lptf77blas -lptcblas -latlas <span class="comment">#put your flags here</span></span><br></pre></td></tr></table></figure></p>
 <ul>
@@ -235,7 +223,7 @@ make install-compat（这个就是安装那个扩展）</code></pre>
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#安装注意"><span class="toc-number">1.</span> <span class="toc-text">0. 安装注意</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装gcc4.8.2"><span class="toc-number">2.</span> <span class="toc-text">1. 安装GCC4.8.2</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装python2.7.10"><span class="toc-number">3.</span> <span class="toc-text">2. 安装Python2.7.10</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装lapack"><span class="toc-number">4.</span> <span class="toc-text">3. 安装lapack</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装atlas"><span class="toc-number">5.</span> <span class="toc-text">4. 安装atlas</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装nose"><span class="toc-number">6.</span> <span class="toc-text">5. 安装nose</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装numpy"><span class="toc-number">7.</span> <span class="toc-text">6. 安装numpy</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装scipy"><span class="toc-number">8.</span> <span class="toc-text">7. 安装scipy</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装theano"><span class="toc-number">9.</span> <span class="toc-text">8. 安装theano</span></a></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#安装注意"><span class="toc-number">1.</span> <span class="toc-text">安装注意</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装gcc4.8.2"><span class="toc-number">2.</span> <span class="toc-text">安装GCC4.8.2</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装python2.7.10"><span class="toc-number">3.</span> <span class="toc-text">安装Python2.7.10</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装cmake"><span class="toc-number">4.</span> <span class="toc-text">安装cmake</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装lapack"><span class="toc-number">5.</span> <span class="toc-text">安装lapack</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装atlas"><span class="toc-number">6.</span> <span class="toc-text">安装atlas</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装nose"><span class="toc-number">7.</span> <span class="toc-text">安装nose</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装numpy"><span class="toc-number">8.</span> <span class="toc-text">安装numpy</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装scipy"><span class="toc-number">9.</span> <span class="toc-text">安装scipy</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装theano"><span class="toc-number">10.</span> <span class="toc-text">安装theano</span></a></li></ol>
  
   </div>
 
